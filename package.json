@@ -1,0 +1,26 @@
+{
+  "name": "re-shake",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "RESHAKE=true rspack build",
+    "build:full": "rspack build"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@rspack/cli": "^1.5.8",
+    "@rspack/core": "^1.5.8",
+    "antd": "6.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@rspack/core": "npm:@rspack-canary/core@1.7.0-canary-22d591c5-20251222090400"
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "@rspack/*"
+      ]
+    }
+  }
+}
